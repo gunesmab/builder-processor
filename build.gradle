@@ -1,0 +1,17 @@
+group 'com.github.gunesmab'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+
+dependencies {
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    compile 'com.squareup:javapoet:1.8.0'
+    compile 'com.github.gunesmab:builder-annotation:1.0'
+    compile files("/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/lib/tools.jar")
+}
